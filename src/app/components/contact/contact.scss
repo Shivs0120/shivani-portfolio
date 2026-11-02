@@ -1,0 +1,61 @@
+.contact {
+  padding: 90px 8%;
+  background: #101a2b;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: #78a9ff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 46px);
+  margin: 15px 0;
+}
+
+.description {
+  color: #a6b3c7;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-button,
+.linkedin-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.contact-button {
+  background: #78a9ff;
+  color: #0b1220;
+}
+
+.linkedin-button {
+  border: 1px solid #78a9ff;
+  color: #78a9ff;
+}
+
+.contact-button:hover,
+.linkedin-button:hover {
+  transform: translateY(-3px);
+}
