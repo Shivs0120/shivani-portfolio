@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Global reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Dreamy Tech colour palette */
+:root {
+  --lavender-bg: #F7F3FF;
+  --lavender-soft: #EAE1FF;
+  --lavender: #C9B5F5;
+  --pink-soft: #F8E5F0;
+  --blue-soft: #E3EDFF;
+  --mint-soft: #E1F5ED;
+
+  --plum: #30243F;
+  --plum-light: #443353;
+  --plum-text: #F8F3FF;
+
+  --text-primary: #30243F;
+  --text-muted: #756A83;
+  --surface: #FFFFFF;
+  --border-soft: #E9E0F2;
+
+  --dreamy-gradient: linear-gradient(
+    135deg,
+    #F7F3FF 0%,
+    #F3E9FA 50%,
+    #EAF0FF 100%
+  );
+
+  --lavender-gradient: linear-gradient(
+    135deg,
+    #BFA7F2,
+    #DCC8F7,
+    #C6D8FF
+  );
+}
+
+/* Overall page appearance */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+  background: var(--lavender-bg);
+}
+
+body {
+  background: var(--dreamy-gradient);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Consistent selection colour */
+::selection {
+  background: var(--lavender);
+  color: var(--plum);
+}
+
+/* Keyboard accessibility */
+:focus-visible {
+  outline: 3px solid var(--lavender);
+  outline-offset: 3px;
+}
+
+/* Consistent section navigation */
+section[id] {
+  scroll-margin-top: 85px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
